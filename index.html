@@ -5,9 +5,42 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
         <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-955573890"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+            gtag('config', 'AW-955573890');
+        </script>
+        <!-- Event snippet for Contato conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+        <script>
+            function gtag_report_conversion(url) {
+                var callback = function () {
+                    if (typeof(url) != 'undefined') {
+                    window.location = url;
+                    }
+                };
+
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-955573890/yWNtCNvwhccZEILN08cD',
+                    'event_callback': callback
+                });
+
+                return false;
+            }
+        </script>
+    
         <title>VS Prestadora de Serviços - HOME</title>
     </head>
 
@@ -29,7 +62,7 @@
 
                     <p class="orcamento__texto orcamento__texto--thin">Contato: (64) 3623-2113</p>
 
-                    <a class="orcamento__botao botao" href="https://api.whatsapp.com/send/?phone=556436232113&text&type=phone_number&app_absent=0">Clique e fale conosco via Whatsapp</a>
+                    <a class="orcamento__botao botao botaoGoogle" href="https://api.whatsapp.com/send/?phone=556436232113&text&type=phone_number&app_absent=0">Clique e fale conosco via Whatsapp</a>
                 </div>
 
                 <p>teste</p>
@@ -212,7 +245,7 @@
 
             <section class="maisInformacoes section">
                 <div class="maisInformacoes__container section__container">
-                    <a class="maisInformacoes__botao botao" href="https://api.whatsapp.com/send/?phone=556436232113&text&type=phone_number&app_absent=0">Entre em contato para mais informações</a>
+                    <a class="maisInformacoes__botao botao botaoGoogle" href="https://api.whatsapp.com/send/?phone=556436232113&text&type=phone_number&app_absent=0">Entre em contato para mais informações</a>
                 </div>
             </section>
 
@@ -261,5 +294,15 @@
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="assets/js/swiper.js"></script>
+        <script>
+            const buttons = document.querySelectorAll('.botaoGoogle');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    gtag_report_conversion();
+                });
+            });
+        </script>
     </body>
 </html>

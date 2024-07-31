@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --swiper-pagination-bottom: 0px;
+    --swiper-pagination-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    width: 100%;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.cabecalho__container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.cabecalho__logo img {
+    width: 24rem;
+}
+
+.cabecalho__texto {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Main */
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem 0rem;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__container {
+    width: 70%;   
+    display: flex;
+    flex-direction: column;
+}
+
+/* Orçamento */
+
+.orcamento {
+    background-color: #000000;
+    padding: 10rem 0;
+}
+
+.orcamento__container {
+    gap: 2rem;
+}
+
+.orcamento__container > * {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.orcamento__titulo {
+    width: fit-content;
+    padding: .5rem;
+    background-color: #ED1C24;
+}
+
+.orcamento__texto--thin {
+    font-weight: 400;
+}
+
+.botao {
+    width: fit-content; 
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+}
+
+.orcamento__botao {
+    background-color: rgb(16, 233, 0);
+    box-shadow: rgb(34, 255, 0) 0px 0px 10px 0px;
+}
+
+/* Contratar */
+
+.contratar {
+    background-color: #FFFFFF;
+}
+
+.contratar__container {
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.contratar__titulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.contratar__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contratar__card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    border: .3rem solid #000000;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contratar__card__icon {
+    border-radius: 50%;
+    border: .3rem solid #000000;
+    padding: 1.5rem;
+}
+
+.contratar__card__icon img{
+    width: 2.6rem;
+}
+
+.contratar__card__content {
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+   justify-content: center;
+}
+
+.contratar__card__titulo {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.contratar__card__texto {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* Serviços */
+
+.servicos {
+    background-color: #FFFFFF;
+}
+
+.servicos__container {
+    display: flex;
+    gap: 4rem;
+}
+
+.servicos__cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicos__cabecalho__texto {
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.servicos__cabecalho__titulo {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.servicos__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    gap: 3.5rem;
+    justify-content: center;
+}
+
+.servicos__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem .3rem #000000;
+}
+
+.servicos__card__titulo {
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper{
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.servicos__card__descricao {
+    font-size: 1.6rem;
+    text-align: center
+}
+
+/* Mais informações */
+
+.maisInformacoes {
+    background-color: white;
+}
+
+.maisInformacoes__container {
+    display: flex;
+    align-items: center;
+}
+
+.maisInformacoes__botao {
+    background-color: #007CBA;
+    box-shadow: 0 0 1rem 0 #1C75BE;
+}
+
+/* Sobre */
+
+.sobre {
+    background-color: white;
+}
+
+.sobre__container {
+    display: flex;
+    gap: 4rem 0;
+    align-items: center;
+}
+
+.sobre__titulo {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.sobre__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sobre__paragrafo {
+    font-size: 1.8rem;
+}
+
+/* Nossos clientes */
+
+.clientes {
+    background-color: white;
+}
+
+.clientes__container {
+    align-items: center;
+    gap: 4rem 0;
+    width: 40%;
+}
+
+.clientes__titulo {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.rodape {
+    width: 100%;
+}
+
+.rodape__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    margin-top: 7rem;
+    padding: 10rem 0;
+    gap: 2rem 0;
+}
+
+.rodape__paragrafo {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}

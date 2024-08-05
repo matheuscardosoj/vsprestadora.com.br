@@ -3,9 +3,9 @@
 @import url(rodape.css);
 
 /* Politicas */
-
 .politicas {
     background-color: #FFFFFF;
+    padding-top: 10rem;
 }
 
 .politicas__container {

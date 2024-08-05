@@ -1,74 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-:root {
-    --swiper-pagination-bottom: 0px;
-    --swiper-pagination-color: #000000;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #000000;
-}
-
-html {
-    font-size: 62.5%;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* Cabeçalho */
-
-.cabecalho {
-    width: 100%;
-    padding: 10rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-}
-
-.cabecalho__container {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-}
-
-.cabecalho__logo img {
-    width: 24rem;
-}
-
-.cabecalho__texto {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-/* Main */
-
-.principal {
-    display: flex;
-    flex-direction: column;
-    gap: 10rem 0rem;
-}
-
-.section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section__container {
-    width: 70%;   
-    display: flex;
-    flex-direction: column;
-}
+@import url(main.css);
+@import url(cabecalho.css);
+@import url(rodape.css);
 
 /* Orçamento */
 
@@ -291,6 +223,7 @@ html {
 
 .sobre__paragrafo {
     font-size: 1.8rem;
+    text-align: justify;
 }
 
 /* Nossos clientes */
@@ -312,52 +245,17 @@ html {
     text-align: center;
 }
 
-.rodape {
-    width: 100%;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    margin-top: 7rem;
-}
-
-.rodape__container {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10rem 0;
-    gap: 2rem 0;
-}
-
-.rodape__paragrafo {
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-@media screen and (max-width: 1440px)  {
-    .cabecalho__container, .section__container, .rodape__container {
-        width: 75%;
-    }
-}
-
 @media screen and (max-width: 1024px)  {
-    .cabecalho__container, .section__container, .rodape__container {
-        width: 80%;
-    }
-
-    .cabecalho__container {
-        flex-direction: column;
-        gap: 4rem;
-    }
-
     .servicos__cards {
         grid-template-columns: repeat(2, 50%);
     }
 }
 
 @media screen and (max-width: 768px)  {
+    .clientes__container {
+        width: 80%;
+    }
+
     .servicos__cards {
         grid-template-columns: repeat(1, 100%);
     }

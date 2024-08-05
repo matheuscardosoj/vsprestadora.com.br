@@ -1,0 +1,71 @@
+@import url(main.css);
+@import url(cabecalho.css);
+@import url(rodape.css);
+
+/* Politicas */
+
+.politicas {
+    background-color: #FFFFFF;
+}
+
+.politicas__container {
+    gap: 4rem;
+}
+
+.politicas__container > * {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 400;
+    text-transform: none;
+    text-align: justify;
+}
+
+.politicas__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.politicas__content a {
+    font-weight: 700;
+    color: #007CBA;
+}
+
+.politicas__content a:hover {
+    text-decoration: underline;
+}
+
+.politicas__titulo {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.politicas__subsecao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.politicas__subsecao > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.politicas__subtitulo {
+    font-size: 2rem;
+}
+
+.politicas__lista {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding-left: 4rem;
+}
+
+.politicas__lista > li {
+    list-style-position: inside;
+}

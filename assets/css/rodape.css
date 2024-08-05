@@ -1,0 +1,20 @@
+.rodape {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.rodape__container {
+    align-items: center;
+    padding: 10rem 0;
+    gap: 2rem 0;
+}
+
+.rodape__paragrafo {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
